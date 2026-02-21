@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            text-align: center;
+            color: white;
+        }
+        .card {
+            background: white;
+            color: black;
+            padding: 40px;
+            margin: 100px auto;
+            width: 400px;
+            border-radius: 15px;
+        }
+        .price {
+            font-size: 32px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>🚗 Predicted Car Price</h1>
+    <p class="price">₹ <span th:text="${price}"></span></p>
+    <br>
+    <a href="/">Predict Again</a>
+</div>
+</body>
+</html>
